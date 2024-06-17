@@ -46,7 +46,12 @@ for (int i = 0; i < n; i++)
 // Печать второго массива
 Console.WriteLine("");
 Console.Write("Слова, содержащие 3 или менее символов: ");
+Console.Write("[");
 for (int i = 0; i < secondArrayIndex; i++)
 {
-    Console.Write($"|  {SecondArray[i]}  |");
+    if (i < secondArrayIndex - 1)
+        Console.Write($"{SecondArray[i]}, ");
+    else
+        Console.Write($"{SecondArray[i]}");
 }
+Console.Write("]");
