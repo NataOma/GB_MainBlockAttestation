@@ -28,3 +28,17 @@ for (int i = 0; i < n; i++)
         FirstArray[i] = Console.ReadLine();
     }
 }
+
+// Создание второго массива
+string[] SecondArray = new string[n];
+int secondArrayIndex = 0;
+
+// Сортировка 3 и меньше, добавление во второй массив
+for (int i = 0; i < n; i++)
+{
+    if (FirstArray[i].Length <= 3)
+    {
+        SecondArray[secondArrayIndex] = FirstArray[i];
+        secondArrayIndex++;
+    }
+}
